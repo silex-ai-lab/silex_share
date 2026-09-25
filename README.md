@@ -23,3 +23,7 @@ ln -s "$PWD/silex_share/skills/herdr-agent-fleet" ~/.claude/skills/herdr-agent-f
 - [OpenCode](https://opencode.ai) on `PATH`
 - `DEEPSEEK_API_KEY` exported in the shell Herdr panes start
 - Optional: [Codex CLI](https://github.com/openai/codex) for the third seat (the skill checks whether it actually runs; a two-seat roster needs your explicit OK)
+
+## License
+
+[MIT](LICENSE)
