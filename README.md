@@ -6,7 +6,7 @@ Claude Code skills shared by Silex AI.
 
 | Skill | What it does |
 | --- | --- |
-| [`herdr-agent-fleet`](skills/herdr-agent-fleet/SKILL.md) | Runs Claude and a DeepSeek-backed OpenCode agent as [Herdr](https://herdr.dev) panes working one task together. DeepSeek reviews the plan before any code is written. |
+| [`herdr-agent-fleet`](skills/herdr-agent-fleet/SKILL.md) | Runs Claude, a DeepSeek-backed OpenCode agent and (when available) Codex as [Herdr](https://herdr.dev) panes working one task together. Two unanimous gates: no code before every seat returns `PLAN-APPROVED`, nothing pushed or deployed before every seat returns `IMPL-APPROVED`. |
 | [`thesis-interrogation`](skills/thesis-interrogation/SKILL.md) | An eight-step questioning loop for stress-testing a market thesis, category definition, or startup direction: structure transfer, laddering up, reality checks against capital and competitors, taxonomy gaps, and causal direction. Written in Chinese. |
 
 ## Install
@@ -23,3 +23,4 @@ ln -s "$PWD/silex_share/skills/herdr-agent-fleet" ~/.claude/skills/herdr-agent-f
 - [Herdr](https://herdr.dev), with Claude Code started inside a Herdr pane
 - [OpenCode](https://opencode.ai) on `PATH`
 - `DEEPSEEK_API_KEY` exported in the shell Herdr panes start
+- Optional: [Codex CLI](https://github.com/openai/codex) for the third seat (the skill checks whether it actually runs; a two-seat roster needs your explicit OK)
